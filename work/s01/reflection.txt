@@ -1,4 +1,5 @@
 I knew of some techniques but have already learnt more and refreshed the git console commands.
+I had never before used the command which allows me to see upstreams and downstreams.
 
 I have never created my own websites alone. 
 I have however together in group created simple basic webserver websites using only html.
@@ -10,3 +11,8 @@ I know that CSS is used as a way to make websites look prettier.
 Javascript can be used in websites as well to create certain commands.
 
 Today I learned (refreshed) many of the commands that are used for git bash terminal.
+I have learned to pull and push via git terminal.
+The course covers alot more languages than I thought would be needed for web design.
+I have learned that the first websites only used HTML and were completely text based.
+CSS was developed as to make the websites look better and allow colours to the websites.
+several other languages can now be used to make websites do methods like javascript.
