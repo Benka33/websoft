@@ -10,3 +10,14 @@ body {
     background: #fff;
     width: 700px;
 }
+
+.car {
+    width: 256px;
+    height: 128px;
+    border: 1px solid black;
+    background-image: url(../img/car.png);
+    background-size: 256px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
