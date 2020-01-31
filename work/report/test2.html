@@ -1,0 +1,34 @@
+<html>
+<head>
+    <link type="text/css" rel="stylesheet" href="css/common.css"/>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"> </script>
+    <style>table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }</style>
+    <script>
+        $(function() {
+            $.getJSON('data/spellData.json', function(data) {
+                var tr;
+                for (var i = 0; i < data.length; i++) {
+                    tr = $('<tr/>');
+                    tr.append("<td>" + data[i][0] + "</td>");
+                    tr.append("<td>" + data[i][1] + "</td>");
+                    tr.append("<td>" + data[i][2] + "</td>");
+                    tr.append("<td>" + data[i][3] + "</td>");
+                    $('table').append(tr);
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <table>
+        <tr>
+            <th> Skolenhetskod </th>
+            <th> Skolenhetsnamn </th>
+            <th> Kommunkod </th>
+            <th> PeOrgNr </th>
+        </tr>
+    </table>
+</body>
