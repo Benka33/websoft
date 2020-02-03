@@ -1,14 +1,39 @@
-(function () {
-    'use strict';
+function schoolFetching (id) {
     console.log('hej')
-//    fetch('https://api.scb.se/UF0109/v2/skolenhetsregister/sv/kommun/1081')
-    fetch('data/1082.json')
+//    fetching of the schools
+    fetch('data/' +id+ '.json')
         .then((response) => {
             return response.json();
         })
         .then((myJson) => {
-            console.log(myJson);
+            createTable(myJson.Skolenheter);
         });
 
-    console.log('Sandbox MEGA is ready!');
-})();
+    
+}
+
+function createTable (tableData){
+    
+    var table = document.getElementById('table');
+    var tablecontent = '';
+    tablecontent += ("<tr>");
+
+    for (key in tableData[0]) {
+        tablecontent += ('<th>' + key + '</th>');
+    }
+
+    tablecontent += ("</tr>")
+
+    for (var i = 0; i < tableData.length; i++){
+        tablecontent += ("<tr>")
+
+        for (key in tableData[i]) {
+            tablecontent += ('<td>' + tableData[i][key] + '</td>');
+        }
+
+        tablecontent += ("</tr>")
+    }
+
+    table.innerHTML = tablecontent;
+
+}
