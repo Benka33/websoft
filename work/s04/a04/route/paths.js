@@ -19,6 +19,9 @@ router.get("/about", (req, res) => {
 // Add a route for the path /lotto
 router.get("/lotto", (req, res) => {
     res.send("The Lottery!");
+
+    
+
 });
 
 module.exports = router;
