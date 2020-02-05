@@ -1,0 +1,18 @@
+I have no prior experince working with JavaScript on the client side.
+My experince working with JavaSccript is therefore very limitied.
+
+I only know of Java well as another language.
+I would say that there are quite many differences between JavaSccript and Java.
+The formating of the code is quite different with JavaScript comparded to Java.
+Semicolons are not a must have in JavaScript since it knows when an expressions ends.
+The for loop looks the same however from what I have seen in examples.
+
+In this exercise I have worked for the grade 3 since I wanted to have the task completed as soon as possible.
+My intent has been to go for grade 4 or 5 if I got the time over to do so.
+I added a car object on the me/report/about.html pages that functions in the same way by using the same Javascript to make it move.
+I had some problems with the apache server program XAMPP which resulted in that I was denied the request (403) to see the school file I was fetching.
+This lead me to use live server instead of XAMPP.
+
+I have learned how to create HTML tables and how to add borders to them in order to make it look more pretty.
+Learned how to Update pages dynamic without reloading the page.
+I have learned how to use XAMPP to create a apache server on my computer. 

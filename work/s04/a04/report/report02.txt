@@ -1,0 +1,19 @@
+I have had some minor experiences with HTML but not with CSS or JavaScript.
+We have had a course where we developed minor sites by using web servers like apache.
+
+HTML (Hyper Text Markup Language) is a language that lets you write plaintext.
+HTML lets the developer choose the structure of the website like headers and allows the use of pictures.
+HTML is the standard langague made for websites.
+CSS (Cascading Style Sheets) is a language that is used in order to make websites look prettier.
+CSS is not needed for a website to be functional but may help it to look more inviting to the users.
+JavaScript is a client-side programming language.
+With JavaScript you can make custom client scripts.
+Javascript alongside HTML and CSS can create web pages that function across various browsers, platform and devices.
+
+A browser makes a request using HTTP and TCP or UDP to a web server to return a resource such as an image, video or webpage. 
+Depending on the authenticity of the request, the server then returns the requested resource. 
+For example, when you type google dot com in the address bar of the browser then a HTTP request is sent to the Google Server and if it detects that your request is legit then it accepts the request and returns the Google Search Page to you.
+
+Today I have learned how the browser, HTTP protocol and web server interacts.
+I have learned how to make footers and apply them.
+I have learned how to change icons for a website.
