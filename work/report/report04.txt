@@ -1,0 +1,21 @@
+I have had no previous experinces with Node or NPM before.
+I have also had no experince with any similiar tool.
+
+I think it was quite hard working with Node and express since I did not have any experince with it.
+The videos form the lectures really helped along with the exercises to get some idea of what you cvould do with it.
+Javascript has been easier working with since we have had it for several lectures now and much of the coding is quite simular to that of Java.
+
+I was aiming for grade 3 since I wanted the basics done as soon as I could but the task proved harder than I had anticipated.
+The first parts for grade 3 was not that hard and with the guidance from the examples I managed to create the prot 1337 and node index that started everything up.
+The report part was not that hard aswell and the copy of report could be accessed quite fast.
+The module I organized with the help of the example and added the path to /lotto in the index.
+I was a bit confused with the modules but I think I got them sorted like they should be, this was very different from Java that I am used to.
+The hard part for me during this assignment was to get an HTML table that had certain cells colored with the lotto numbers.
+I had problem with finding something that would allow me to fill in seperate cells and not the whole rows or columns.
+Finally found a video that helped me put bgcolor in the <td> tag which allowed me to finish the rest for grade 3 quite quickly althoguh a bit sloppy in my own opinion.
+
+I aimed for grade 3 and the hard part with this was the HTML table with having some cells filled in but the others as they were.
+
+I have learned how to fill in single cells in a table with color and gotten a good grasp on how to create my HTML table with the combonation of having a var and filling it in with more details to build the whole table from scratch.
+I have learned how to work with node and express in order to create a port on my localhost that I can acess to get on the webb to try out my own programs.
+I have also learned alot about how to use modules although I still find it to be quite hard to put good naming on the maps and files that I put there.
