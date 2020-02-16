@@ -1,45 +1,9 @@
-<?php
-
+<?php 
+$pageTitle = "Report";
+require "../view/header.php" 
 ?>
 
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <title>Reports during this course</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="favicon.ico">
-</head>
-
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-    .footer {
-       position: fixed;
-       left: 0;
-       bottom: 0;
-       width: 100%;
-       background-color: red;
-       color: white;
-       text-align: center;
-    }
-    </style>
-    </head>
-
-<body>
-
-    <div id='car' class='car'></div>
-
-<header>
-    <nav>
-        <a href="me.php">Me</a> |
-        <a href="report.php">Report</a> | 
-        <a href="about.php">About</a>
-        <a href="schools.php">Schools</a>
-    </nav>
-</header>
-
-
+<div id='car' class='car'></div>
 
 <article>
 
@@ -96,9 +60,7 @@
 
 </section>
 
-<div class="footer">
-    <p>Footer</p>
-  </div>
+<?php require "../view/footer.php" ?>
 
 </article>
 

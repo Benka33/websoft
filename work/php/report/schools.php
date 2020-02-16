@@ -1,50 +1,22 @@
-<?php
-
+<?php 
+$pageTitle = "Schools";
+require "../view/header.php" 
 ?>
 
-<!doctype html>
-<html lang="en">
     <head>
-        <meta charset="utf-8">
-        <title>Schools</title>
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="icon" href="favicon.ico">
+        
         <style>table, th, td {
             border: 1px solid black;
             border-collapse: collapse;
           }</style>
-    </head>
-
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <style>
-        .footer {
-           position: fixed;
-           left: 0;
-           bottom: 0;
-           width: 100%;
-           background-color: blue;
-           color: white;
-           text-align: center;
-        }
-        </style>
-        </head>
-
-         
+    </head> 
 
         <body>
 
-          <script src="js/main.js"></script>    
+         
           <script src="js/schoolFetch.js"></script>     
 
-            <header>
-                <nav>
-                    <a href="me.php">Me</a> |
-                    <a href="report.php">Report</a> | 
-                    <a href="about.php">About</a>
-                    <a href="schools.php">Schools</a>
-                </nav>
-            </header>
+    
 
             <div id="sel"> 
               <select name="schools" id="schools" onchange="schoolFetching(this.value)">

@@ -1,46 +1,7 @@
-<?php
-
+<?php 
+$pageTitle = "Me";
+require "../view/header.php" 
 ?>
-
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <title>Presentation of my self</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="favicon.ico">
-</head>
-
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-    .footer {
-       position: fixed;
-       left: 0;
-       bottom: 0;
-       width: 100%;
-       background-color: blue;
-       color: white;
-       text-align: center;
-    }
-    </style>
-    </head>
-
-<body>
-
-<!--
-Comments are written as HTML style.
--->
-
-
-<header>
-    <nav>
-        <a href="me.php">Me</a> |
-        <a href="report.php">Report</a> | 
-        <a href="about.php">About</a>
-        <a href="schools.php">Schools</a>
-    </nav>
-</header>
 
 <div id='car' class='car'></div>
 
@@ -63,13 +24,11 @@ Comments are written as HTML style.
     started climbing alot.
 </p>
 
-<p>this line is only here so that the footer does not hide the text of my introduction</p>
+
 
 </article>
 
-<div class="footer">
-    <p>Footer</p>
-  </div>
+<?php require "../view/footer.php" ?>
 
 
 

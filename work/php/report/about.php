@@ -1,43 +1,7 @@
-<?php
-
+<?php 
+$pageTitle = "About";
+require "../view/header.php" 
 ?>
-
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <title>About this site</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="favicon.ico">
-</head>
-
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-    .footer {
-       position: fixed;
-       left: 0;
-       bottom: 0;
-       width: 100%;
-       background-color: green;
-       color: white;
-       text-align: center;
-    }
-    </style>
-    </head>
-
-<body>
-
-
-
-<header>
-    <nav>
-        <a href="me.php">Me</a> |
-        <a href="report.php">Report</a> | 
-        <a href="about.php">About</a>
-        <a href="schools.php">Schools</a>
-    </nav>
-</header>
 
 <div id='car' class='car'></div>
 
@@ -58,13 +22,13 @@
 <p>url for my git repo <a href="https://github.com/Benka33/websoft">My repo</a> </p>
 <p>url for the course repo <a href="https://github.com/Webbprogrammering/websoft">course repo</a> </p>
 
-<p>Here so footer does not cut text off</p>
+
 
 </article>
 
-<div class="footer">
-    <p>Footer</p>
-  </div>
+<?php require "../view/footer.php" ?>
+
+
 
 <script type="text/javascript" src="js/main.js"></script>
 <script type="text/javascript" src="js/car.js"></script>
