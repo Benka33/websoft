@@ -1,0 +1,12 @@
+JavaScript, Python and Java are some languages that are very popular right now.
+JavaScript will probably always be popular since it is very common to use it when developing web pages and custom made scripts for other uses.
+Python is a language that has is used much in machine learning and will probably keep being one of the most commun languages for programming.
+Java is a great language since the use of JVM (Java Virtual Machine) alows programs written in Java to run on every system.
+I belive they will all be at the top for popular languages since these languages has so much to offer.
+
+I will probably learn Python at some point and continue with Java, I might aswell try to get base knowledge of the C++ or C# language but it will all depend on what jobs I can hope to get.
+
+
+If I were to recommend Java for example to my employer it would probably be for an application that needs to be run on several different systems, like on a phone.
+Then with Java we could be able to with ease make it available for both android, apple and other systems that might need to have it integrateed with it.
+I would try to bring up the positive aspects with the language or framework that I would be recommending and also wheter it could be a easy language/framework/technique to learn for the employees.
