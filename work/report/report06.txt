@@ -5,7 +5,13 @@ Java is a great language since the use of JVM (Java Virtual Machine) alows progr
 I belive they will all be at the top for popular languages since these languages has so much to offer.
 
 I will probably learn Python at some point and continue with Java, I might aswell try to get base knowledge of the C++ or C# language but it will all depend on what jobs I can hope to get.
+I would also in the future try to improve my exsisting knowledge about languages I already know.
 
+I have compared Java, JavaScript and Python.
+during the last 12 months Python has become more popular than Java and is the leading of the three.
+JavaScript is the lower but it is still widely used and still very popular.
+US, Canada and big part of the countries in Europe seems to prefer Python over Java according to google trends.
+While Javascript is more popular in south America and in Africa.
 
 If I were to recommend Java for example to my employer it would probably be for an application that needs to be run on several different systems, like on a phone.
 Then with Java we could be able to with ease make it available for both android, apple and other systems that might need to have it integrateed with it.

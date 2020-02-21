@@ -1,6 +1,6 @@
 <?php 
 $pageTitle = "Schools";
-require "../view/header.php" 
+require "view/header.php";
 ?>
 
     <head>
@@ -31,3 +31,5 @@ require "../view/header.php"
               </table>
 
         </body>
+
+        <?php require "view/footer.php"; ?> 

@@ -1,6 +1,6 @@
 <?php 
 $pageTitle = "About";
-require "../view/header.php" 
+require "view/header.php";
 ?>
 
 <div id='car' class='car'></div>
@@ -26,7 +26,7 @@ require "../view/header.php"
 
 </article>
 
-<?php require "../view/footer.php" ?>
+<?php require "view/footer.php" ?>
 
 
 

@@ -1,0 +1,18 @@
+I personally do not like PHP very much from the experince I have had with it.
+I liked using JavaScript much more since it felt closer to Java and therefore easier to understand and write.
+I do not see a huge need to in the future develope my knowledge in PHP.
+The reason for this is that I feel that PHP is not as popular as JavaScript on the web.
+
+PHP is in some aspects close to java but not as close as JavaScript in my opinion. 
+I also do not have any other programming language I know of that I could compare PHP with.
+
+As before I aimed for grade 3 since I feel like I want to complete the work and move on to the next assignment.
+Since the degree project just got aproved for my group I have put more energy towards that and reading articles.
+I am quite happy with the result that came out of this assignment and everything works as intended.
+I feel that some minor things could be improved like assigning borders to my HTML tables so that it looks better.
+I might if I got time after every assignment is done come back to try to improve the coding and aim for a higher grade but it is not very likely.
+
+I have learned some basic PHP coding.
+I have learned how to connect to my own PHP sites by using the xampps SQL server and mySQL Workbench.
+I have learned to create a home shortcut through the terminal that made it easier to connect to the PHP websites.
+I have learned the use of headers and footers as seperate files that you can require so that I save space and dont have to rewrite code.
