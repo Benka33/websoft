@@ -1,0 +1,31 @@
+Filip Bengtsson
+
+https://www.github.com/ for the first website since it is a page many developers use to share code and store code.
+In lighthouse we can see that Github got the scores 70, 79, 92 and 80, giving the site an average of 80,5 which is good but improvements could still be made.
+The network tab in dev tools shows that the page gets loaded quickly and the pictures the site contains are small in size and no trouble to load.
+There are also no errors when loading the page.
+Pagespeed recommends jpeg formating on pictures instead of png since that it makes the download faster and reduces data costs.
+Pagespeed gives github the rating of 90.
+Github gets good scores but much improvment can be made in the pictures, like formating and delay loading pictures that are not visable in the screen.
+The speed index in performance had a poor result and this dragged down the score for performance and could use improvement.
+
+https://www.youtube.com/ for the second website, this is a page that allows access to billions of videos.
+In lighthouse we can see that youtube got the scores 61, 78, 93 and 90, giving the site an average of 80,5 just like Github which is a good score but gives information that improvements can be made.
+Performance got 61 so we can see that we can improve that.
+The network tab shows that the site loads quickly and then continue to load in information that is not visable in the screen but the main load seems to complete in 1,7 sec.
+All status looks good with 200 code but some requests has been blocked. 
+Some improvemnets can be to remove css that is not being used in order to increase the performance.
+The PageSpeed gives youtube a bad rating at 43 points, some opertunities to increase the performance is to load the important resources first.
+Youtube could also save time if they would be able to reduce the workload on the mother-thread.
+
+https://www.Google.com/ is the third website I conducted tests on, a serach engine that millions of people use every single day.
+Lighthouse gives Google the scores 94, 86, 86 and 92 which average 89,5, this is a very good result and is the most optimized website that has been tested.
+Even if it is good there could be minor improvements like some small optimiziations in the code like trying to minimaze the main threads workload.
+preconnect to required origins to establish early connections to important third-party origins could also be made in order to save some time.
+The network tab shows that it takes around 6,9 seconds to load the page there were two blocked requests and one failed but that one did not give a code.
+Pagespeed gives Google the rating of 100, I personally think it is interesting that a google tool rates google at a perfect score.
+I does however show that the made the tests they run all green although the first render for the content was a bit solow at 2,3 seconds.
+It also does not show any optimization tips for the page since it gave it 100 points.
+
+Today I learned how to search and find results for how well made websites can be by using the developer tool, pagespeed and lighthouse.
+There can be very big difference in page load time depending what sites are being compared and also that newspaper sites often continue to load in the background.
