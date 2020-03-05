@@ -6,8 +6,10 @@ using System.Collections.Generic;
 
 namespace jsonBank
 {
+    
     class Program
     {
+        
         static void Main(string[] args)
         {
             bool showMenu = true;
@@ -25,19 +27,55 @@ namespace jsonBank
             Console.WriteLine("1) View accounts");
             Console.WriteLine("2) View account by number");
             Console.WriteLine("3) Exit");
-            Console.Write("\r\nSelect an option: ");
+            Console.Write("\r\nSelect an option: \n");
          
             switch (Console.ReadLine())
             {
                 case "1":
+                System.Console.WriteLine("+--------+--------+----------+---------+");
+                    Console.WriteLine("| {0,-6} | {1,-6} | {2,-8} | {3,-7} |", "Number", "Owner", "Balance", "Label");
+                    System.Console.WriteLine("+--------+--------+----------+---------+");
                     foreach (var account in accounts) {
-                Console.WriteLine(account);
-            }
+                        Console.WriteLine("| {0,-6} | {1,-6} | {2,-8} | {3,-7} |", account.Number, account.Owner, account.Balance, account.Label);
+                }
+                System.Console.WriteLine("|--------------------------------------|");
                     return true;
                 case "2":
-                    Console.WriteLine("u pressed a 2 my homeboy");
+                    Console.WriteLine("Enter ID to search for: ");
+                    var id = Console.ReadLine();
+
+                    int accountNumber;
+                    bool parseInt = int.TryParse(id, out accountNumber);
+
+                    if (parseInt) {
+
+                    bool exists = false;
+
+                    foreach (var account in accounts) {
+
+                        if (account.Number == accountNumber) {
+                            System.Console.WriteLine("+--------+--------+----------+---------+");
+                            Console.WriteLine("| {0,-6} | {1,-6} | {2,-8} | {3,-7} |", "Number", "Owner", "Balance", "Label");
+                            System.Console.WriteLine("+--------+--------+----------+---------+");
+                            Console.WriteLine("| {0,-6} | {1,-6} | {2,-8} | {3,-7} |", account.Number, account.Owner, account.Balance, account.Label); 
+                            System.Console.WriteLine("|--------------------------------------|");
+                            Console.WriteLine("");
+                            exists = true;
+                         }
+
+                    }
+
+                    if (!exists) {
+                    Console.WriteLine("Account does not exists");
+                    Console.WriteLine("");
+                    }
+
+                    }
+
+                    
                     return true;
                 case "3":
+                Console.Write("Goodbye");
                     return false;
                 default:
                     return true;
@@ -51,7 +89,7 @@ namespace jsonBank
             using (StreamReader r = new StreamReader(file))
             { 
                 string data = r.ReadToEnd();
-                // Console.WriteLine(data);
+                //Console.WriteLine(data);
 
                 var json = JsonSerializer.Deserialize<Account[]>(
                     data,
@@ -64,7 +102,6 @@ namespace jsonBank
                 return json;
             }
         }
-
     }
 
     public class Account
@@ -80,9 +117,3 @@ namespace jsonBank
     }
 
 }
-/*
-1. Create a menu driven console application with the menu choices.
-2. The user should select what to do and the application should close when the user selects "Exit" from the menu.
-3. The choice "View accounts" should load the accounts from the JSON file and print out a pretty formatted text table with a header and details of all accounts.
-4. The choice "View account by number" should ask the user for an id and show the account that matches that id.
-*/
