@@ -1,0 +1,22 @@
+SQL injections, these can occur for example if the database has not been properly protected in the code by the developer.
+This could lead to malicious users deleting tables or dropping the entire database.
+Creating prepared SQL statements could remove that risk.
+
+Bad storage of password is a case of sensitive data exposure meaning that if important and sensitive information does not get protected it can leak to attackers.
+This could be information like addresses name, personal security ID or phone number for example. 
+It is important to protect and encrypt this information and not store it so that it is easy accesible for people that do not have permission to see/use it.
+
+Login as admin which refers to Broken access control, this can be that the developer forgets to remove a backdoor in to the program that grants admin priveledges.
+can be that there is an account that has admin rights but that the password and username is something very weak like username: admin pw: root which is widely known around the world.
+This can be abused by people that knows this and might go around and try common usernames and passwords for admin rights.
+
+For new developers on the web:
+When using databases make preparded statements so that no one can destroy or get sensitive information from the database.
+Read carefully about databases and learn what security flaws there might be if you do not do something manually to protect the program.
+Encrypt sensitive information and do not store them so that they are easily accesible for whomever that is using the system.
+Give users only the rights they need and nothing more since if a user that is not supposed to be reading or writing to the database gets access to do so it can harm the system or other users.
+Remove backdoors into the system when they are no longer needed or make them secure with approperiet passwords and usernames.
+
+I have learned more and taken part of The OWASP Top 10 Web Application Security Risks that are needed to be taken into consideration when developing on the web.
+Always take into consideration that there will always be malicious users that could be trying to be taking advantage of your systems.
+ 

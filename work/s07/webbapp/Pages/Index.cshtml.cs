@@ -23,7 +23,7 @@ namespace webApp.Pages
 
         public void OnGet()
         {
-            Accounts = AccountService.GetAccounts();
+            Accounts = AccountService.ReadAccounts();
         }
     }
 }
