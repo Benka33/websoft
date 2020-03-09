@@ -1,1 +1,17 @@
 I aimed for grade 3 during this exercise.
+The exercise was much harder than the previous assignments.
+Most of the hours went into the second part of the exercise, creating the webbapp and adding search routes to the accounts.
+I am satisfied with the result since everyhing works.
+I started off with working on the console part and had some trouble on how to surround the database with a nice looking texttable but when I undersood how I could do it it was quite easy.
+The webbapp part could look better but it follows the reqiurements for a grade 3 which I feel is enough for the course.
+
+The .NET Framework is a system component that is part of the operatingsystem Microsoft Windows.
+In this framework C# and ASP.NET is a part of it.
+ASP.NET is an open-source server-side web-application framework and it is designed for web development which allows the developer to produce dynamic web sites, applications and services.
+C# is a language that is built thanks to the .NET framework. 
+The .NET framework includes a large class library that provides language interoperability.
+The language interoperability means that code languages can use code written in different languages.
+
+From this exercise I have learned the basics of the .NET Framework and how to run them in both the console and on the webb.
+How to initialize the dotnet applications from the console to load all required files for the startup.
+How to create nice looking tables in the console with loops.
