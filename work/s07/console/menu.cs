@@ -12,14 +12,14 @@ namespace jsonBank
         
         static void Main(string[] args)
         {
-            bool showMenu = true;
-            while (showMenu)
+            bool menu = true;
+            while (menu)
             {
-                showMenu = MainMenu();
+                menu = bankMenu();
             }
         }
 
-        private static bool MainMenu()
+        private static bool bankMenu()
         {
             var accounts = ReadAccounts();
             
@@ -36,7 +36,7 @@ namespace jsonBank
                     Console.WriteLine("| {0,-6} | {1,-6} | {2,-8} | {3,-7} |", "Number", "Owner", "Balance", "Label");
                     System.Console.WriteLine("+--------+--------+----------+---------+");
                     foreach (var account in accounts) {
-                        Console.WriteLine("| {0,-6} | {1,-6} | {2,-8} | {3,-7} |", account.Number, account.Owner, account.Balance, account.Label);
+                        Console.WriteLine("| {0,-6} | {1,-6} | {2,-8} | {3,-7} |", account.number, account.owner, account.balance, account.label);
                 }
                 System.Console.WriteLine("|--------------------------------------|");
                     return true;
@@ -53,12 +53,12 @@ namespace jsonBank
 
                     foreach (var account in accounts) {
 
-                        if (account.Number == accountNumber) {
+                        if (account.number == accountNumber) {
                             System.Console.WriteLine("+--------+--------+----------+---------+");
                             Console.WriteLine("| {0,-6} | {1,-6} | {2,-8} | {3,-7} |", "Number", "Owner", "Balance", "Label");
                             System.Console.WriteLine("+--------+--------+----------+---------+");
-                            Console.WriteLine("| {0,-6} | {1,-6} | {2,-8} | {3,-7} |", account.Number, account.Owner, account.Balance, account.Label); 
-                            System.Console.WriteLine("|--------------------------------------|");
+                            Console.WriteLine("| {0,-6} | {1,-6} | {2,-8} | {3,-7} |", account.number, account.owner, account.balance, account.label); 
+                            System.Console.WriteLine("+--------------------------------------+");
                             Console.WriteLine("");
                             exists = true;
                          }
@@ -66,7 +66,7 @@ namespace jsonBank
                     }
 
                     if (!exists) {
-                    Console.WriteLine("Account does not exists");
+                    Console.WriteLine("No such account exist");
                     Console.WriteLine("");
                     }
 
@@ -86,10 +86,9 @@ namespace jsonBank
         {
             String file = "../../data/account.json";
 
-            using (StreamReader r = new StreamReader(file))
+            using (StreamReader reader = new StreamReader(file))
             { 
-                string data = r.ReadToEnd();
-                //Console.WriteLine(data);
+                string data = reader.ReadToEnd();
 
                 var json = JsonSerializer.Deserialize<Account[]>(
                     data,
@@ -98,7 +97,6 @@ namespace jsonBank
                     }
                 );
 
-                //Console.WriteLine(json[0]);
                 return json;
             }
         }
@@ -106,10 +104,10 @@ namespace jsonBank
 
     public class Account
     {
-        public int Number { get; set; }
-        public int Balance { get; set; }
-        public string Label { get; set; }
-        public int Owner { get; set; }
+        public int number { get; set; }
+        public int balance { get; set; }
+        public string label { get; set; }
+        public int owner { get; set; }
         
         public override string ToString() {
             return JsonSerializer.Serialize<Account>(this);
