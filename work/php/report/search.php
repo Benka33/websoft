@@ -18,14 +18,7 @@ if ($search) {
 
     // Prepare and execute the SQL statement
     $sql = <<<EOD
-SELECT
-    *
-FROM tech
-WHERE
-    id = ?
-    OR label LIKE ?
-    OR type LIKE ?
-;
+SELECT * FROM tech WHERE id = ? OR label LIKE ? OR type LIKE ?;
 EOD;
     $stmt = $db->prepare($sql);
     $stmt->execute([$search, $like, $like]);
@@ -33,9 +26,6 @@ EOD;
     // Get the results as an array with column names as array keys
     $res = $stmt->fetchAll();
 }
-
-
-
 
 ?><h1>Search the database</h1>
 

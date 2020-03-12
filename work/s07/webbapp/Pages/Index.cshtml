@@ -16,15 +16,13 @@ table, th, td {
 }
 </style>
 
-
-
 @foreach (var account in Model.Accounts){
     <table style="width:50%">
     <tr>
-        <td>Number: @account.Number</td>
-        <td>Owner: @account.Owner</td> 
-        <td>Balance: @account.Balance</td>
-        <td>Label: @account.Label</td>
+        <td>Number: @account.number</td>
+        <td>Owner: @account.owner</td> 
+        <td>Balance: @account.balance</td>
+        <td>Label: @account.label</td>
     </tr>
     </table>
     }

@@ -23,28 +23,28 @@ namespace webap.Controllers
             return AccountService.ReadAccounts();
         }
         
-        [Route("api/accounts/{account}")]
+        [Route("api/account/{account}")]
         [HttpGet]
         public Account Get(int account)
         {
             IEnumerable<Account> list = AccountService.ReadAccounts();
 
-            Account finalAcc = new Account();
-            finalAcc.Balance = 0;
-            finalAcc.Label = "Does not exist";
-            finalAcc.Number = -1;
-            finalAcc.Owner = 0;
+            Account bankAccount = new Account();
+            bankAccount.balance = 0;
+            bankAccount.label = "This account does not exist";
+            bankAccount.number = -1;
+            bankAccount.owner = 0;
 
             foreach (var acc in list)
             {
-                if (acc.Number == account)
+                if (acc.number == account)
                 {
-                    finalAcc = acc;
+                    bankAccount = acc;
                     break;
                 }
             }
 
-            return finalAcc;
+            return bankAccount;
         }
 
     }

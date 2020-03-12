@@ -15,25 +15,25 @@ function schoolFetching (id) {
 function createTable (tableData){
     
     var table = document.getElementById('table');
-    var tablecontent = '';
-    tablecontent += ("<tr>");
+    var htmlTable = '';
+    htmlTable += ("<tr>");
 
-    for (key in tableData[0]) {
-        tablecontent += ('<th>' + key + '</th>');
+    for (value in tableData[0]) {
+        htmlTable += ('<th>' + value + '</th>');
     }
 
-    tablecontent += ("</tr>")
+    htmlTable += ("</tr>")
 
     for (var i = 0; i < tableData.length; i++){
-        tablecontent += ("<tr>")
+        htmlTable += ("<tr>")
 
-        for (key in tableData[i]) {
-            tablecontent += ('<td>' + tableData[i][key] + '</td>');
+        for (value in tableData[i]) {
+            htmlTable += ('<td>' + tableData[i][value] + '</td>');
         }
 
-        tablecontent += ("</tr>")
+        htmlTable += ("</tr>")
     }
 
-    table.innerHTML = tablecontent;
+    table.innerHTML = htmlTable;
 
 }

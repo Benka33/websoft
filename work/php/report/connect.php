@@ -7,18 +7,18 @@ require "view/header.php";
 // database connection
 $database = connectDatabase($dsn);
 
-// SQL statement
+// SQL statement that select all in the tech table
 $statement = $database->prepare("SELECT * FROM tech");
 $statement->execute();
 
 // Get the results as an array with column names as array keys
-$result = $statement->fetchAll();
-
+$result = $statement->fetchAll();   
 
 ?><h1>Database connection</h1>
 
 <table>
     <tr>
+        <th>ID</th>
         <th>Label</th>
         <th>Type</th>
     </tr>
