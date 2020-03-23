@@ -1,0 +1,23 @@
+The project Rent-a-butler was implemented using Node.js, REST API, Javascript, HTML and CSS.
+Some problems that came during the project were that at one point we could not login with more than the first user in the database.
+A quick fix was to create an array that stored the entire document of users in it that could then be run in a for each loop to be able to get each user individually.
+Near the end of the project we saw that we had forgotten the about page but this was very easy to address an add to the website.
+The project as a whole was not super hard, for me personally it took some time getting used to how to write certain things in Javascript since I dont have much experience with that language.
+It did not take very long time to complete the whole project compared to what time was available to work on it, however all the assignments and degree thesis at the side made it hard to 
+focus on the work until most of it were done so it was a bit stressful with everything around the project.
+The work was divided in the group with two handling frontend and two handling backend. 
+The project was reasonable for the course since it required us to use things that we learned during the course.
+A problem that I had during the project was with Git, I could commit and pull code but for some reason I could not push, so when I worked wit the login and createUser and it was done
+what we did was to copy it and send it to another group member who added it to git since  Icould not get it to work.
+
+Thoughts about course:
+I think the course was quite good since it gave me insights in several different langagues that can be used to develop applications and sites on the web.
+I do think that the course should perhaps come earlier and not at the same time as the degree thesis since with the assignments, project work and examination at the same time as the degree thesis
+it becomes quite much to handle at the same time, especially when getting started on the more difficult coding assignments.
+I really liked that the teacher made videos of the lectures and made them easily accessible.
+If I had a friend that would want to learn programming on the web I think that this course would be very good for them since it covers several thigns around programming on the web.
+The only exception would be if they had never coded before since so many languages would be very hard for a beginner programmer to understand without prior knowledge within atleast one langague.
+On a grade 1-10 I would probably give the course around 7, it was very educational but I personally did not think it was the best course to ahve at the side of the degree thesis.
+
+I have learned the basics of several languages such as PHP, C#, CSS, HTML. I have also learned about the .NET and Node.js.
+Creating websites that has been both static and dynamic. Creating headers and fonts for pages and to make easy accessible files for the purpose of reuse several times.
